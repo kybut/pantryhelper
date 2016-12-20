@@ -1,0 +1,16 @@
+<!doctype html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PantryHelper Demo</title>
+</head>
+<body>
+<h1>Grocery List:</h1>
+    <div th:each="g : ${groceries}">
+        <div>
+            <b th:text="${g.id}">ID: </b>
+            <span th:text="${g.name}">Grocery Item</span>,
+            <span th:text="${g.notes}">Notes</span>
+        </div>
+    </div>
+</body>
+</html>
